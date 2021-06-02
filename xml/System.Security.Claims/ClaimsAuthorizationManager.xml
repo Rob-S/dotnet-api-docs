@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClaimsAuthorizationManager extends System.Object implements class System.IdentityModel.Configuration.ICustomIdentityConfiguration" />
   <TypeSignature Language="DocId" Value="T:System.Security.Claims.ClaimsAuthorizationManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ClaimsAuthorizationManager&#xA;Implements ICustomIdentityConfiguration" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ClaimsAuthorizationManager : System::IdentityModel::Configuration::ICustomIdentityConfiguration" />
   <TypeSignature Language="F#" Value="type ClaimsAuthorizationManager = class&#xA;    interface ICustomIdentityConfiguration" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClaimsAuthorizationManager : System::IdentityModel::Configuration::ICustomIdentityConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,11 +45,11 @@
   
  The following code shows the implementation of the custom claims authorization manager. The <xref:System.Security.Claims.ClaimsAuthorizationManager.LoadCustomConfiguration%2A> method reads and compiles the policy from configuration by using the policy reader helper class (not shown) and the <xref:System.Security.Claims.ClaimsAuthorizationManager.CheckAccess%2A> method grants or denies access based on this policy.  
   
- [!code-csharp[WifClaimsBasedAuthorization#2](~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/myclaimsauthorizationmanager.cs#2)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/myclaimsauthorizationmanager.cs" id="Snippet2":::  
   
  The following code shows the `ResourceAction` class used by the custom claims manager.  
   
- [!code-csharp[WifClaimsBasedAuthorization#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/resourceaction.cs#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/resourceaction.cs" id="Snippet1":::  
   
  The following XML shows how to configure the claims authorization manager shown above for a web application hosted in IIS 7.5. Only the elements specific to the configuration of the claims authorization manager are shown. Note that a reference to the <xref:System.IdentityModel.Services.ClaimsAuthorizationModule> class must be added to the pipeline under the `<system.Webserver>` element. For sites and applications hosted in versions of IIS prior to IIS 7 the modules can be added to the pipeline under the `<system.Web>` element. This configuration is shown but commented out.  
   
@@ -182,8 +182,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CheckAccess(class System.Security.Claims.AuthorizationContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsAuthorizationManager.CheckAccess(System.Security.Claims.AuthorizationContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CheckAccess (context As AuthorizationContext) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CheckAccess(System::Security::Claims::AuthorizationContext ^ context);" />
       <MemberSignature Language="F#" Value="abstract member CheckAccess : System.Security.Claims.AuthorizationContext -&gt; bool&#xA;override this.CheckAccess : System.Security.Claims.AuthorizationContext -&gt; bool" Usage="claimsAuthorizationManager.CheckAccess context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CheckAccess(System::Security::Claims::AuthorizationContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -213,12 +213,12 @@
   
  The following code shows the override of the <xref:System.Security.Claims.ClaimsAuthorizationManager.CheckAccess%2A> method. This method grants or denies access based on a policy read and compiled from the configuration file.  
   
- [!code-csharp[WifClaimsBasedAuthorization#3](~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/myclaimsauthorizationmanager.cs#3)]  
-[!code-csharp[WifClaimsBasedAuthorization#5](~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/myclaimsauthorizationmanager.cs#5)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/myclaimsauthorizationmanager.cs" id="Snippet3":::  
+:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/myclaimsauthorizationmanager.cs" id="Snippet5":::  
   
  The following code shows the `ResourceAction` class used by the custom claims manager.  
   
- [!code-csharp[WifClaimsBasedAuthorization#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/resourceaction.cs#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/resourceaction.cs" id="Snippet1":::  
   
  The policy used by the claims authorization manager is specified by custom `<policy>` elements under the [&lt;claimsAuthorizationManager&gt;](/dotnet/framework/configure-apps/file-schema/windows-identity-foundation/claimsauthorizationmanager) element. This policy is read and compiled by the <xref:System.Security.Claims.ClaimsAuthorizationManager.LoadCustomConfiguration%2A> method. In the first policy, the principal must possess one of the specified claims in order to perform the specified action on the specified resource. In the second policy, the principal must possess both claims to be able to perform the specified action on the specified resource. In all others, the principal is automatically granted access regardless of the claims it possesses.  
   
@@ -261,8 +261,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadCustomConfiguration(class System.Xml.XmlNodeList nodelist) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Claims.ClaimsAuthorizationManager.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadCustomConfiguration (nodelist As XmlNodeList)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LoadCustomConfiguration(System::Xml::XmlNodeList ^ nodelist);" />
       <MemberSignature Language="F#" Value="abstract member LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit&#xA;override this.LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit" Usage="claimsAuthorizationManager.LoadCustomConfiguration nodelist" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LoadCustomConfiguration(System::Xml::XmlNodeList ^ nodelist);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IdentityModel.Configuration.ICustomIdentityConfiguration.LoadCustomConfiguration(System.Xml.XmlNodeList)</InterfaceMember>
@@ -295,12 +295,12 @@
   
  The following code shows the override of the <xref:System.Security.Claims.ClaimsAuthorizationManager.LoadCustomConfiguration%2A> method. This method uses a helper policy reader class (not shown) to read and compile authorization policies specified in the configuration file. Policies are added to a dictionary and are accessed by a `ResourceAction` key object that is created from the resource and action for which they are intended.  
   
- [!code-csharp[WifClaimsBasedAuthorization#3](~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/myclaimsauthorizationmanager.cs#3)]  
-[!code-csharp[WifClaimsBasedAuthorization#4](~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/myclaimsauthorizationmanager.cs#4)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/myclaimsauthorizationmanager.cs" id="Snippet3":::  
+:::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/myclaimsauthorizationmanager.cs" id="Snippet4":::  
   
  The following code shows the `ResourceAction` class used by the custom claims manager.  
   
- [!code-csharp[WifClaimsBasedAuthorization#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/resourceaction.cs#1)]  
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/resourceaction.cs" id="Snippet1":::  
   
  The policy used by the claims authorization manager is specified by custom `<policy>` elements under the [&lt;claimsAuthorizationManager&gt;](/dotnet/framework/configure-apps/file-schema/windows-identity-foundation/claimsauthorizationmanager) element. This policy is read and compiled by the <xref:System.Security.Claims.ClaimsAuthorizationManager.LoadCustomConfiguration%2A> method. In the first policy, the principal must possess one of the specified claims in order to perform the specified action on the specified resource. In the second policy, the principal must possess both claims to be able to perform the specified action on the specified resource. In all others, the principal is automatically granted access regardless of the claims it possesses.  
   

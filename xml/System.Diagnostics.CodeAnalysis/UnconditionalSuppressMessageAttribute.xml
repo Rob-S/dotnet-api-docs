@@ -3,11 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UnconditionalSuppressMessageAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UnconditionalSuppressMessageAttribute&#xA;Inherits Attribute" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UnconditionalSuppressMessageAttribute sealed : Attribute" />
   <TypeSignature Language="F#" Value="type UnconditionalSuppressMessageAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnconditionalSuppressMessageAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
@@ -37,12 +38,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string category, string checkId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (category As String, checkId As String)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnconditionalSuppressMessageAttribute(System::String ^ category, System::String ^ checkId);" />
       <MemberSignature Language="F#" Value="new System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute : string * string -&gt; System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute" Usage="new System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute (category, checkId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnconditionalSuppressMessageAttribute(System::String ^ category, System::String ^ checkId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="category" Type="System.String" />
@@ -60,12 +62,13 @@
       <MemberSignature Language="ILAsm" Value=".property instance string Category" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Category" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Category As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Category { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Category : string" Usage="System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Category" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Category { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -89,12 +92,13 @@ The <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.
       <MemberSignature Language="ILAsm" Value=".property instance string CheckId" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.CheckId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckId As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CheckId { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CheckId : string" Usage="System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.CheckId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CheckId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -118,12 +122,13 @@ Concatenated together, the <xref:System.Diagnostics.CodeAnalysis.UnconditionalSu
       <MemberSignature Language="ILAsm" Value=".property instance string Justification" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Justification" />
       <MemberSignature Language="VB.NET" Value="Public Property Justification As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Justification { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Justification : string with get, set" Usage="System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Justification" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Justification { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -139,12 +144,13 @@ Concatenated together, the <xref:System.Diagnostics.CodeAnalysis.UnconditionalSu
       <MemberSignature Language="ILAsm" Value=".property instance string MessageId" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.MessageId" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageId As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.MessageId : string with get, set" Usage="System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.MessageId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -168,12 +174,13 @@ The <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.
       <MemberSignature Language="ILAsm" Value=".property instance string Scope" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Scope" />
       <MemberSignature Language="VB.NET" Value="Public Property Scope As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scope { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Scope : string with get, set" Usage="System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Scope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Scope { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -197,12 +204,13 @@ The `Scope` property is an optional argument that specifies the metadata scope f
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SymmetricAlgorithm extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SymmetricAlgorithm" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class SymmetricAlgorithm&#xA;Implements IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SymmetricAlgorithm abstract : IDisposable" />
   <TypeSignature Language="F#" Value="type SymmetricAlgorithm = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SymmetricAlgorithm abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +12,7 @@
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.2.0</AssemblyVersion>
     <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -26,8 +27,9 @@
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeForwardingChain>
-    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Security.Cryptography.Primitives" ToVersion="0.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Security.Cryptography.Primitives" ToVersion="0.0.0.0" FrameworkAlternate="net-5.0;net-6.0" />
     <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography.Primitives" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography.Primitives" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
   </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -62,9 +64,9 @@
 ## Examples
  The following code example uses the <xref:System.Security.Cryptography.Aes> class with the specified <xref:System.Security.Cryptography.SymmetricAlgorithm.Key%2A> property and initialization vector (<xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A>) to encrypt a file specified by `inName`, and outputs the encrypted result to the file specified by `outName`. The `desKey` and `desIV` parameters to the method are 8-byte arrays. You must have the high encryption pack installed to run this example.
 
- [!code-cpp[Classic CryptoStream Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic CryptoStream Example/CPP/source.cpp#1)]
- [!code-csharp[Classic CryptoStream Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic CryptoStream Example/CS/source.cs#1)]
- [!code-vb[Classic CryptoStream Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic CryptoStream Example/VB/source.vb#1)]
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic CryptoStream Example/CPP/source.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic CryptoStream Example/CS/source.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic CryptoStream Example/VB/source.vb" id="Snippet1":::
 
  ]]></format>
     </remarks>
@@ -75,11 +77,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected SymmetricAlgorithm ();" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="protected SymmetricAlgorithm ();" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.#ctor" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SymmetricAlgorithm();" FrameworkAlternate="net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SymmetricAlgorithm();" FrameworkAlternate="net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C#" Value="public SymmetricAlgorithm ();" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" FrameworkAlternate="netframework-1.1" />
@@ -92,6 +94,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -125,8 +128,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance int32 BlockSize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.BlockSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property BlockSize As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int BlockSize { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.BlockSize : int with get, set" Usage="System.Security.Cryptography.SymmetricAlgorithm.BlockSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int BlockSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -135,6 +138,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -171,8 +175,8 @@
       <MemberSignature Language="ILAsm" Value=".field family int32 BlockSizeValue" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.BlockSizeValue" />
       <MemberSignature Language="VB.NET" Value="Protected BlockSizeValue As Integer " />
-      <MemberSignature Language="C++ CLI" Value="protected: int BlockSizeValue;" />
       <MemberSignature Language="F#" Value="val mutable BlockSizeValue : int" Usage="System.Security.Cryptography.SymmetricAlgorithm.BlockSizeValue" />
+      <MemberSignature Language="C++ CLI" Value="protected: int BlockSizeValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -181,6 +185,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -217,8 +222,8 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="symmetricAlgorithm.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -238,6 +243,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -273,8 +279,8 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.SymmetricAlgorithm Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.Create" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As SymmetricAlgorithm" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::SymmetricAlgorithm ^ Create();" />
       <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.SymmetricAlgorithm" Usage="System.Security.Cryptography.SymmetricAlgorithm.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::SymmetricAlgorithm ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -294,9 +300,10 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-5.0">
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
           <AttributeName Language="C#">[System.Obsolete("The default implementation of this cryptography algorithm is not supported", DiagnosticId="SYSLIB0007", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("The default implementation of this cryptography algorithm is not supported", DiagnosticId="SYSLIB0007", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
         </Attribute>
@@ -328,12 +335,12 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
       </Docs>
     </Member>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.SymmetricAlgorithm? Create (string algName);" FrameworkAlternate="net-5.0" />
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.SymmetricAlgorithm? Create (string algName);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.SymmetricAlgorithm Create(string algName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.Create(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algName As String) As SymmetricAlgorithm" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::SymmetricAlgorithm ^ Create(System::String ^ algName);" />
       <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.SymmetricAlgorithm" Usage="System.Security.Cryptography.SymmetricAlgorithm.Create algName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::SymmetricAlgorithm ^ Create(System::String ^ algName);" />
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.SymmetricAlgorithm Create (string algName);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -354,8 +361,13 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
+        <Attribute FrameworkAlternate="net-6.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("The default algorithm implementations might be removed, use strong type references like 'RSA.Create()' instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("The default algorithm implementations might be removed, use strong type references like 'RSA.Create()' instead.")&gt;]</AttributeName>
+        </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName Language="C#">[System.Security.SecuritySafeCritical]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Security.SecuritySafeCritical&gt;]</AttributeName>
@@ -365,7 +377,7 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
         <ReturnType>System.Security.Cryptography.SymmetricAlgorithm</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="algName" Type="System.String" Index="0" FrameworkAlternate="net-5.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="algName" Type="System.String" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="algName">The name of the specific implementation of the <see cref="T:System.Security.Cryptography.SymmetricAlgorithm" /> class to use.</param>
@@ -390,8 +402,8 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDecryptor () As ICryptoTransform" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor();" />
       <MemberSignature Language="F#" Value="abstract member CreateDecryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateDecryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform" Usage="symmetricAlgorithm.CreateDecryptor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -400,6 +412,7 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -432,12 +445,12 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
       </Docs>
     </Member>
     <Member MemberName="CreateDecryptor">
-      <MemberSignature Language="C#" Value="public abstract System.Security.Cryptography.ICryptoTransform CreateDecryptor (byte[] rgbKey, byte[]? rgbIV);" FrameworkAlternate="net-5.0" />
+      <MemberSignature Language="C#" Value="public abstract System.Security.Cryptography.ICryptoTransform CreateDecryptor (byte[] rgbKey, byte[]? rgbIV);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateDecryptor (rgbKey As Byte(), rgbIV As Byte()) As ICryptoTransform" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" />
       <MemberSignature Language="F#" Value="abstract member CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="symmetricAlgorithm.CreateDecryptor (rgbKey, rgbIV)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" />
       <MemberSignature Language="C#" Value="public abstract System.Security.Cryptography.ICryptoTransform CreateDecryptor (byte[] rgbKey, byte[] rgbIV);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -447,6 +460,7 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -498,8 +512,8 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateEncryptor () As ICryptoTransform" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor();" />
       <MemberSignature Language="F#" Value="abstract member CreateEncryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateEncryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform" Usage="symmetricAlgorithm.CreateEncryptor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -508,6 +522,7 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -551,12 +566,12 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
       </Docs>
     </Member>
     <Member MemberName="CreateEncryptor">
-      <MemberSignature Language="C#" Value="public abstract System.Security.Cryptography.ICryptoTransform CreateEncryptor (byte[] rgbKey, byte[]? rgbIV);" FrameworkAlternate="net-5.0" />
+      <MemberSignature Language="C#" Value="public abstract System.Security.Cryptography.ICryptoTransform CreateEncryptor (byte[] rgbKey, byte[]? rgbIV);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateEncryptor (rgbKey As Byte(), rgbIV As Byte()) As ICryptoTransform" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" />
       <MemberSignature Language="F#" Value="abstract member CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="symmetricAlgorithm.CreateEncryptor (rgbKey, rgbIV)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" />
       <MemberSignature Language="C#" Value="public abstract System.Security.Cryptography.ICryptoTransform CreateEncryptor (byte[] rgbKey, byte[] rgbIV);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -566,6 +581,7 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -617,8 +633,8 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="symmetricAlgorithm.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -630,6 +646,7 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -673,8 +690,8 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="symmetricAlgorithm.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -683,6 +700,7 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -730,8 +748,8 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
       <MemberSignature Language="ILAsm" Value=".property instance int32 FeedbackSize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FeedbackSize As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FeedbackSize { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.FeedbackSize : int with get, set" Usage="System.Security.Cryptography.SymmetricAlgorithm.FeedbackSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FeedbackSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -751,6 +769,7 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -775,8 +794,8 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
       <MemberSignature Language="ILAsm" Value=".field family int32 FeedbackSizeValue" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.FeedbackSizeValue" />
       <MemberSignature Language="VB.NET" Value="Protected FeedbackSizeValue As Integer " />
-      <MemberSignature Language="C++ CLI" Value="protected: int FeedbackSizeValue;" />
       <MemberSignature Language="F#" Value="val mutable FeedbackSizeValue : int" Usage="System.Security.Cryptography.SymmetricAlgorithm.FeedbackSizeValue" />
+      <MemberSignature Language="C++ CLI" Value="protected: int FeedbackSizeValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -796,6 +815,7 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -820,8 +840,8 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
-      <MemberSignature Language="C++ CLI" Value="!SymmetricAlgorithm ()" />
       <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="symmetricAlgorithm.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!SymmetricAlgorithm ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -849,8 +869,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateIV() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.GenerateIV" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub GenerateIV ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void GenerateIV();" />
       <MemberSignature Language="F#" Value="abstract member GenerateIV : unit -&gt; unit" Usage="symmetricAlgorithm.GenerateIV " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void GenerateIV();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -859,6 +879,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -894,8 +915,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateKey() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.GenerateKey" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub GenerateKey ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void GenerateKey();" />
       <MemberSignature Language="F#" Value="abstract member GenerateKey : unit -&gt; unit" Usage="symmetricAlgorithm.GenerateKey " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void GenerateKey();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -904,6 +925,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -934,13 +956,112 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <related type="Article" href="/dotnet/standard/security/cryptographic-services">Cryptographic Services</related>
       </Docs>
     </Member>
+    <Member MemberName="GetCiphertextLengthCbc">
+      <MemberSignature Language="C#" Value="public int GetCiphertextLengthCbc (int plaintextLength, System.Security.Cryptography.PaddingMode paddingMode = System.Security.Cryptography.PaddingMode.PKCS7);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetCiphertextLengthCbc(int32 plaintextLength, valuetype System.Security.Cryptography.PaddingMode paddingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.GetCiphertextLengthCbc(System.Int32,System.Security.Cryptography.PaddingMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCiphertextLengthCbc (plaintextLength As Integer, Optional paddingMode As PaddingMode = System.Security.Cryptography.PaddingMode.PKCS7) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetCiphertextLengthCbc : int * System.Security.Cryptography.PaddingMode -&gt; int" Usage="symmetricAlgorithm.GetCiphertextLengthCbc (plaintextLength, paddingMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plaintextLength" Type="System.Int32" Index="0" FrameworkAlternate="net-6.0" />
+        <Parameter Name="paddingMode" Type="System.Security.Cryptography.PaddingMode" Index="1" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="plaintextLength">To be added.</param>
+        <param name="paddingMode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCiphertextLengthCfb">
+      <MemberSignature Language="C#" Value="public int GetCiphertextLengthCfb (int plaintextLength, System.Security.Cryptography.PaddingMode paddingMode = System.Security.Cryptography.PaddingMode.None, int feedbackSizeInBits = 8);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetCiphertextLengthCfb(int32 plaintextLength, valuetype System.Security.Cryptography.PaddingMode paddingMode, int32 feedbackSizeInBits) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.GetCiphertextLengthCfb(System.Int32,System.Security.Cryptography.PaddingMode,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCiphertextLengthCfb (plaintextLength As Integer, Optional paddingMode As PaddingMode = System.Security.Cryptography.PaddingMode.None, Optional feedbackSizeInBits As Integer = 8) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetCiphertextLengthCfb : int * System.Security.Cryptography.PaddingMode * int -&gt; int" Usage="symmetricAlgorithm.GetCiphertextLengthCfb (plaintextLength, paddingMode, feedbackSizeInBits)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plaintextLength" Type="System.Int32" Index="0" FrameworkAlternate="net-6.0" />
+        <Parameter Name="paddingMode" Type="System.Security.Cryptography.PaddingMode" Index="1" FrameworkAlternate="net-6.0" />
+        <Parameter Name="feedbackSizeInBits" Type="System.Int32" Index="2" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="plaintextLength">To be added.</param>
+        <param name="paddingMode">To be added.</param>
+        <param name="feedbackSizeInBits">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCiphertextLengthEcb">
+      <MemberSignature Language="C#" Value="public int GetCiphertextLengthEcb (int plaintextLength, System.Security.Cryptography.PaddingMode paddingMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetCiphertextLengthEcb(int32 plaintextLength, valuetype System.Security.Cryptography.PaddingMode paddingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.GetCiphertextLengthEcb(System.Int32,System.Security.Cryptography.PaddingMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCiphertextLengthEcb (plaintextLength As Integer, paddingMode As PaddingMode) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetCiphertextLengthEcb : int * System.Security.Cryptography.PaddingMode -&gt; int" Usage="symmetricAlgorithm.GetCiphertextLengthEcb (plaintextLength, paddingMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCiphertextLengthEcb(int plaintextLength, System::Security::Cryptography::PaddingMode paddingMode);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="plaintextLength" Type="System.Int32" Index="0" FrameworkAlternate="net-6.0" />
+        <Parameter Name="paddingMode" Type="System.Security.Cryptography.PaddingMode" Index="1" FrameworkAlternate="net-6.0" />
+      </Parameters>
+      <Docs>
+        <param name="plaintextLength">To be added.</param>
+        <param name="paddingMode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IV">
       <MemberSignature Language="C#" Value="public virtual byte[] IV { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] IV" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IV As Byte()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ IV { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberSignature Language="F#" Value="member this.IV : byte[] with get, set" Usage="System.Security.Cryptography.SymmetricAlgorithm.IV" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ IV { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -949,6 +1070,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -986,12 +1108,12 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       </Docs>
     </Member>
     <Member MemberName="IVValue">
-      <MemberSignature Language="C#" Value="protected byte[]? IVValue;" FrameworkAlternate="net-5.0" />
+      <MemberSignature Language="C#" Value="protected byte[]? IVValue;" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".field family unsigned int8[] IVValue" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.IVValue" />
       <MemberSignature Language="VB.NET" Value="Protected IVValue As Byte() " />
-      <MemberSignature Language="C++ CLI" Value="protected: cli::array &lt;System::Byte&gt; ^ IVValue;" />
       <MemberSignature Language="F#" Value="val mutable IVValue : byte[]" Usage="System.Security.Cryptography.SymmetricAlgorithm.IVValue" />
+      <MemberSignature Language="C++ CLI" Value="protected: cli::array &lt;System::Byte&gt; ^ IVValue;" />
       <MemberSignature Language="C#" Value="protected byte[] IVValue;" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
@@ -1001,6 +1123,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1035,8 +1158,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Key" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.Key" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Key As Byte()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ Key { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Key : byte[] with get, set" Usage="System.Security.Cryptography.SymmetricAlgorithm.Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ Key { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -1045,6 +1168,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1084,8 +1208,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.KeySize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property KeySize As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int KeySize { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.KeySize : int with get, set" Usage="System.Security.Cryptography.SymmetricAlgorithm.KeySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int KeySize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -1094,6 +1218,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1132,8 +1257,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".field family int32 KeySizeValue" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.KeySizeValue" />
       <MemberSignature Language="VB.NET" Value="Protected KeySizeValue As Integer " />
-      <MemberSignature Language="C++ CLI" Value="protected: int KeySizeValue;" />
       <MemberSignature Language="F#" Value="val mutable KeySizeValue : int" Usage="System.Security.Cryptography.SymmetricAlgorithm.KeySizeValue" />
+      <MemberSignature Language="C++ CLI" Value="protected: int KeySizeValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -1142,6 +1267,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1174,12 +1300,12 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       </Docs>
     </Member>
     <Member MemberName="KeyValue">
-      <MemberSignature Language="C#" Value="protected byte[]? KeyValue;" FrameworkAlternate="net-5.0" />
+      <MemberSignature Language="C#" Value="protected byte[]? KeyValue;" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberSignature Language="ILAsm" Value=".field family unsigned int8[] KeyValue" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.KeyValue" />
       <MemberSignature Language="VB.NET" Value="Protected KeyValue As Byte() " />
-      <MemberSignature Language="C++ CLI" Value="protected: cli::array &lt;System::Byte&gt; ^ KeyValue;" />
       <MemberSignature Language="F#" Value="val mutable KeyValue : byte[]" Usage="System.Security.Cryptography.SymmetricAlgorithm.KeyValue" />
+      <MemberSignature Language="C++ CLI" Value="protected: cli::array &lt;System::Byte&gt; ^ KeyValue;" />
       <MemberSignature Language="C#" Value="protected byte[] KeyValue;" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
@@ -1189,6 +1315,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1225,8 +1352,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.KeySizes[] LegalBlockSizes" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LegalBlockSizes As KeySizes()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalBlockSizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.LegalBlockSizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalBlockSizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -1235,6 +1362,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1265,8 +1393,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
 ## Examples
  The following example shows the value of <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizes%2A> for the symmetric algorithms.
 
- [!code-csharp[System.Security.Cryptography.SymmetricAlgorithm.BlockSize#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm.blocksize/cs/program.cs#1)]
- [!code-vb[System.Security.Cryptography.SymmetricAlgorithm.BlockSize#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm.blocksize/vb/program.vb#1)]
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm.blocksize/cs/program.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm.blocksize/vb/program.vb" id="Snippet1":::
 
  ]]></format>
         </remarks>
@@ -1278,8 +1406,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".field family class System.Security.Cryptography.KeySizes[] LegalBlockSizesValue" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizesValue" />
       <MemberSignature Language="VB.NET" Value="Protected LegalBlockSizesValue As KeySizes() " />
-      <MemberSignature Language="C++ CLI" Value="protected: cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalBlockSizesValue;" />
       <MemberSignature Language="F#" Value="val mutable LegalBlockSizesValue : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.SymmetricAlgorithm.LegalBlockSizesValue" />
+      <MemberSignature Language="C++ CLI" Value="protected: cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalBlockSizesValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -1288,6 +1416,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1302,7 +1431,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-5.0">
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
           <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.MaybeNull]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.MaybeNull&gt;]</AttributeName>
         </Attribute>
@@ -1330,8 +1459,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.KeySizes[] LegalKeySizes" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LegalKeySizes As KeySizes()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.LegalKeySizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -1340,6 +1469,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1370,8 +1500,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
 ## Examples
  The following example shows the value of <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes%2A> for the AES symmetric algorithm.
 
- [!code-csharp[System.Security.Cryptography.SymmetricAlgorithm.BlockSize#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm.blocksize/cs/program.cs#1)]
- [!code-vb[System.Security.Cryptography.SymmetricAlgorithm.BlockSize#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm.blocksize/vb/program.vb#1)]
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm.blocksize/cs/program.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.cryptography.symmetricalgorithm.blocksize/vb/program.vb" id="Snippet1":::
 
  ]]></format>
         </remarks>
@@ -1383,8 +1513,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".field family class System.Security.Cryptography.KeySizes[] LegalKeySizesValue" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizesValue" />
       <MemberSignature Language="VB.NET" Value="Protected LegalKeySizesValue As KeySizes() " />
-      <MemberSignature Language="C++ CLI" Value="protected: cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizesValue;" />
       <MemberSignature Language="F#" Value="val mutable LegalKeySizesValue : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizesValue" />
+      <MemberSignature Language="C++ CLI" Value="protected: cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizesValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -1393,6 +1523,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1407,7 +1538,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-5.0">
+        <Attribute FrameworkAlternate="net-5.0;net-6.0">
           <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.MaybeNull]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.MaybeNull&gt;]</AttributeName>
         </Attribute>
@@ -1435,8 +1566,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.CipherMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Mode As CipherMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Cryptography::CipherMode Mode { System::Security::Cryptography::CipherMode get(); void set(System::Security::Cryptography::CipherMode value); };" />
       <MemberSignature Language="F#" Value="member this.Mode : System.Security.Cryptography.CipherMode with get, set" Usage="System.Security.Cryptography.SymmetricAlgorithm.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Cryptography::CipherMode Mode { System::Security::Cryptography::CipherMode get(); void set(System::Security::Cryptography::CipherMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -1445,6 +1576,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1481,8 +1613,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".field family valuetype System.Security.Cryptography.CipherMode ModeValue" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.ModeValue" />
       <MemberSignature Language="VB.NET" Value="Protected ModeValue As CipherMode " />
-      <MemberSignature Language="C++ CLI" Value="protected: System::Security::Cryptography::CipherMode ModeValue;" />
       <MemberSignature Language="F#" Value="val mutable ModeValue : System.Security.Cryptography.CipherMode" Usage="System.Security.Cryptography.SymmetricAlgorithm.ModeValue" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Security::Cryptography::CipherMode ModeValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -1491,6 +1623,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1527,8 +1660,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.PaddingMode Padding" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SymmetricAlgorithm.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Padding As PaddingMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Cryptography::PaddingMode Padding { System::Security::Cryptography::PaddingMode get(); void set(System::Security::Cryptography::PaddingMode value); };" />
       <MemberSignature Language="F#" Value="member this.Padding : System.Security.Cryptography.PaddingMode with get, set" Usage="System.Security.Cryptography.SymmetricAlgorithm.Padding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Cryptography::PaddingMode Padding { System::Security::Cryptography::PaddingMode get(); void set(System::Security::Cryptography::PaddingMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -1537,6 +1670,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1573,8 +1707,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".field family valuetype System.Security.Cryptography.PaddingMode PaddingValue" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.SymmetricAlgorithm.PaddingValue" />
       <MemberSignature Language="VB.NET" Value="Protected PaddingValue As PaddingMode " />
-      <MemberSignature Language="C++ CLI" Value="protected: System::Security::Cryptography::PaddingMode PaddingValue;" />
       <MemberSignature Language="F#" Value="val mutable PaddingValue : System.Security.Cryptography.PaddingMode" Usage="System.Security.Cryptography.SymmetricAlgorithm.PaddingValue" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Security::Cryptography::PaddingMode PaddingValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -1583,6 +1717,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1619,8 +1754,8 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.System#IDisposable#Dispose" />
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberSignature Language="F#" Value="abstract member System.IDisposable.Dispose : unit -&gt; unit&#xA;override this.System.IDisposable.Dispose : unit -&gt; unit" Usage="symmetricAlgorithm.System.IDisposable.Dispose " />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -1660,8 +1795,8 @@ This member is an explicit interface member implementation. It can be used only 
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ValidKeySize(int32 bitLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SymmetricAlgorithm.ValidKeySize(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValidKeySize (bitLength As Integer) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidKeySize(int bitLength);" />
       <MemberSignature Language="F#" Value="member this.ValidKeySize : int -&gt; bool" Usage="symmetricAlgorithm.ValidKeySize bitLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidKeySize(int bitLength);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1681,12 +1816,13 @@ This member is an explicit interface member implementation. It can be used only 
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bitLength" Type="System.Int32" Index="0" FrameworkAlternate="net-5.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="bitLength" Type="System.Int32" Index="0" FrameworkAlternate="net-5.0;net-6.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="bitLength">The length, in bits, to check for a valid key size.</param>

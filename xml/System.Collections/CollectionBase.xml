@@ -1,10 +1,10 @@
 <Type Name="CollectionBase" FullName="System.Collections.CollectionBase">
   <TypeSignature Language="C#" Value="public abstract class CollectionBase : System.Collections.IList" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CollectionBase extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CollectionBase extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Collections.CollectionBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class CollectionBase&#xA;Implements IList" />
+  <TypeSignature Language="F#" Value="type CollectionBase = class&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IList" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="C++ CLI" Value="public ref class CollectionBase abstract : System::Collections::IList" />
-  <TypeSignature Language="F#" Value="type CollectionBase = class&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IList" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit CollectionBase extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <TypeSignature Language="F#" Value="type CollectionBase = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
   <AssemblyInfo>
@@ -15,6 +15,7 @@
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.2.0</AssemblyVersion>
     <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -29,8 +30,9 @@
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeForwardingChain>
-    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Collections.NonGeneric" ToVersion="0.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Collections.NonGeneric" ToVersion="0.0.0.0" FrameworkAlternate="net-5.0;net-6.0" />
     <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Collections.NonGeneric" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Collections.NonGeneric" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
   </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -75,9 +77,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -121,6 +123,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -157,8 +160,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (capacity As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CollectionBase(int capacity);" />
       <MemberSignature Language="F#" Value="new System.Collections.CollectionBase : int -&gt; System.Collections.CollectionBase" Usage="new System.Collections.CollectionBase capacity" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CollectionBase(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -168,6 +171,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -181,7 +185,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="capacity" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="capacity" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="capacity">The number of elements that the new list can initially store.</param>
@@ -206,8 +210,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".property instance int32 Capacity" />
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.Capacity" />
       <MemberSignature Language="VB.NET" Value="Public Property Capacity As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capacity { int get(); void set(int value); };" />
       <MemberSignature Language="F#" Value="member this.Capacity : int with get, set" Usage="System.Collections.CollectionBase.Capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Capacity { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -217,6 +221,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -266,8 +271,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="collectionBase.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -280,6 +285,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -318,8 +324,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.CollectionBase.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -332,6 +338,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -357,9 +364,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
    
  ]]></format>
         </remarks>
@@ -370,8 +377,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="collectionBase.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -384,6 +391,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -432,9 +440,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -446,8 +454,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList InnerList" />
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.InnerList" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property InnerList As ArrayList" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::ArrayList ^ InnerList { System::Collections::ArrayList ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.InnerList : System.Collections.ArrayList" Usage="System.Collections.CollectionBase.InnerList" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::ArrayList ^ InnerList { System::Collections::ArrayList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -457,6 +465,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -491,8 +500,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList List" />
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.List" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property List As IList" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::IList ^ List { System::Collections::IList ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.List : System.Collections.IList" Usage="System.Collections.CollectionBase.List" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::IList ^ List { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -502,6 +511,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -534,9 +544,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -547,8 +557,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClear ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClear();" />
       <MemberSignature Language="F#" Value="abstract member OnClear : unit -&gt; unit&#xA;override this.OnClear : unit -&gt; unit" Usage="collectionBase.OnClear " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -558,6 +568,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -607,8 +618,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClearComplete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnClearComplete" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClearComplete ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClearComplete();" />
       <MemberSignature Language="F#" Value="abstract member OnClearComplete : unit -&gt; unit&#xA;override this.OnClearComplete : unit -&gt; unit" Usage="collectionBase.OnClearComplete " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClearComplete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -618,6 +629,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -663,9 +675,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnInsert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnInsert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInsert (index As Integer, value As Object)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInsert(int index, System::Object ^ value);" />
       <MemberSignature Language="F#" Value="abstract member OnInsert : int * obj -&gt; unit&#xA;override this.OnInsert : int * obj -&gt; unit" Usage="collectionBase.OnInsert (index, value)" />
-      <MemberSignature Language="C#" Value="protected virtual void OnInsert (int index, object? value);" FrameworkAlternate="net-5.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInsert(int index, System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="protected virtual void OnInsert (int index, object? value);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -675,6 +687,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -716,9 +729,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -741,9 +754,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnInsertComplete(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnInsertComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInsertComplete (index As Integer, value As Object)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInsertComplete(int index, System::Object ^ value);" />
       <MemberSignature Language="F#" Value="abstract member OnInsertComplete : int * obj -&gt; unit&#xA;override this.OnInsertComplete : int * obj -&gt; unit" Usage="collectionBase.OnInsertComplete (index, value)" />
-      <MemberSignature Language="C#" Value="protected virtual void OnInsertComplete (int index, object? value);" FrameworkAlternate="net-5.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInsertComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="protected virtual void OnInsertComplete (int index, object? value);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -753,6 +766,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -809,9 +823,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRemove(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnRemove(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRemove (index As Integer, value As Object)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRemove(int index, System::Object ^ value);" />
       <MemberSignature Language="F#" Value="abstract member OnRemove : int * obj -&gt; unit&#xA;override this.OnRemove : int * obj -&gt; unit" Usage="collectionBase.OnRemove (index, value)" />
-      <MemberSignature Language="C#" Value="protected virtual void OnRemove (int index, object? value);" FrameworkAlternate="net-5.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRemove(int index, System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="protected virtual void OnRemove (int index, object? value);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -821,6 +835,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -862,9 +877,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -886,9 +901,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRemoveComplete(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnRemoveComplete(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRemoveComplete (index As Integer, value As Object)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRemoveComplete(int index, System::Object ^ value);" />
       <MemberSignature Language="F#" Value="abstract member OnRemoveComplete : int * obj -&gt; unit&#xA;override this.OnRemoveComplete : int * obj -&gt; unit" Usage="collectionBase.OnRemoveComplete (index, value)" />
-      <MemberSignature Language="C#" Value="protected virtual void OnRemoveComplete (int index, object? value);" FrameworkAlternate="net-5.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRemoveComplete(int index, System::Object ^ value);" />
+      <MemberSignature Language="C#" Value="protected virtual void OnRemoveComplete (int index, object? value);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -898,6 +913,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -954,9 +970,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSet(int32 index, object oldValue, object newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnSet(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
       <MemberSignature Language="F#" Value="abstract member OnSet : int * obj * obj -&gt; unit&#xA;override this.OnSet : int * obj * obj -&gt; unit" Usage="collectionBase.OnSet (index, oldValue, newValue)" />
-      <MemberSignature Language="C#" Value="protected virtual void OnSet (int index, object? oldValue, object? newValue);" FrameworkAlternate="net-5.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="C#" Value="protected virtual void OnSet (int index, object? oldValue, object? newValue);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -966,6 +982,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1009,9 +1026,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1034,9 +1051,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSetComplete(int32 index, object oldValue, object newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSetComplete (index As Integer, oldValue As Object, newValue As Object)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSetComplete(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
       <MemberSignature Language="F#" Value="abstract member OnSetComplete : int * obj * obj -&gt; unit&#xA;override this.OnSetComplete : int * obj * obj -&gt; unit" Usage="collectionBase.OnSetComplete (index, oldValue, newValue)" />
-      <MemberSignature Language="C#" Value="protected virtual void OnSetComplete (int index, object? oldValue, object? newValue);" FrameworkAlternate="net-5.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSetComplete(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
+      <MemberSignature Language="C#" Value="protected virtual void OnSetComplete (int index, object? oldValue, object? newValue);" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1046,6 +1063,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1104,8 +1122,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnValidate(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnValidate (value As Object)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnValidate(System::Object ^ value);" />
       <MemberSignature Language="F#" Value="abstract member OnValidate : obj -&gt; unit&#xA;override this.OnValidate : obj -&gt; unit" Usage="collectionBase.OnValidate value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnValidate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1115,6 +1133,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1152,9 +1171,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1176,8 +1195,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="collectionBase.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -1190,6 +1209,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1238,8 +1258,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Sub CopyTo (array As Array, index As Integer) Implements ICollection.CopyTo" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberSignature Language="F#" Value="abstract member System.Collections.ICollection.CopyTo : Array * int -&gt; unit&#xA;override this.System.Collections.ICollection.CopyTo : Array * int -&gt; unit" Usage="collectionBase.System.Collections.ICollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -1252,6 +1272,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1306,8 +1327,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.System.Collections.ICollection.IsSynchronized : bool" Usage="System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1320,6 +1341,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1350,9 +1372,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
   
  The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> during the entire enumeration:  
   
- [!code-cpp[System.Collections.CollectionBase#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/remarks.cpp#2)]
- [!code-csharp[System.Collections.CollectionBase#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/remarks.cs#2)]
- [!code-vb[System.Collections.CollectionBase#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/remarks.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/remarks.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/remarks.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/remarks.vb" id="Snippet2":::  
   
  Retrieving the value of this property is an `O(1)` operation.  
   
@@ -1366,8 +1388,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.System.Collections.ICollection.SyncRoot : obj" Usage="System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1380,6 +1402,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1409,9 +1432,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
   
  The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> during the entire enumeration:  
   
- [!code-cpp[System.Collections.CollectionBase#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/remarks.cpp#2)]
- [!code-csharp[System.Collections.CollectionBase#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/remarks.cs#2)]
- [!code-vb[System.Collections.CollectionBase#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/remarks.vb#2)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/remarks.cpp" id="Snippet2":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/remarks.cs" id="Snippet2":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/remarks.vb" id="Snippet2":::  
   
  Retrieving the value of this property is an `O(1)` operation.  
   
@@ -1425,8 +1448,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.System#Collections#IList#Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
-      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberSignature Language="F#" Value="abstract member System.Collections.IList.Add : obj -&gt; int&#xA;override this.System.Collections.IList.Add : obj -&gt; int" Usage="collectionBase.System.Collections.IList.Add value" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
@@ -1439,6 +1462,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1475,9 +1499,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1499,8 +1523,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.System#Collections#IList#Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function Contains (value As Object) As Boolean Implements IList.Contains" />
-      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberSignature Language="F#" Value="abstract member System.Collections.IList.Contains : obj -&gt; bool&#xA;override this.System.Collections.IList.Contains : obj -&gt; bool" Usage="collectionBase.System.Collections.IList.Contains value" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
@@ -1513,6 +1537,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1552,9 +1577,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1567,8 +1592,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.System#Collections#IList#IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Function IndexOf (value As Object) As Integer Implements IList.IndexOf" />
-      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberSignature Language="F#" Value="abstract member System.Collections.IList.IndexOf : obj -&gt; int&#xA;override this.System.Collections.IList.IndexOf : obj -&gt; int" Usage="collectionBase.System.Collections.IList.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
@@ -1581,6 +1606,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1619,9 +1645,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1634,8 +1660,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.System#Collections#IList#Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberSignature Language="F#" Value="abstract member System.Collections.IList.Insert : int * obj -&gt; unit&#xA;override this.System.Collections.IList.Insert : int * obj -&gt; unit" Usage="collectionBase.System.Collections.IList.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
@@ -1648,6 +1674,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1689,9 +1716,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1718,8 +1745,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.System#Collections#IList#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsFixedSize { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.System.Collections.IList.IsFixedSize : bool" Usage="System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1732,6 +1759,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1771,8 +1799,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.System#Collections#IList#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsReadOnly { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.System.Collections.IList.IsReadOnly : bool" Usage="System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IList::IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1785,6 +1813,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1824,9 +1853,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.CollectionBase.System#Collections#IList#Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IList::Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberSignature Language="F#" Value="member this.System.Collections.IList.Item(int) : obj with get, set" Usage="System.Collections.IList.Item" />
-      <MemberSignature Language="C#" Value="object? System.Collections.IList.Item[int index] { get; set; }" FrameworkAlternate="net-5.0" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IList::Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="C#" Value="object? System.Collections.IList.Item[int index] { get; set; }" FrameworkAlternate="net-5.0;net-6.0" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -1839,6 +1868,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1875,9 +1905,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>
@@ -1898,8 +1928,8 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CollectionBase.System#Collections#IList#Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberSignature Language="F#" Value="abstract member System.Collections.IList.Remove : obj -&gt; unit&#xA;override this.System.Collections.IList.Remove : obj -&gt; unit" Usage="collectionBase.System.Collections.IList.Remove value" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
@@ -1912,6 +1942,7 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1951,9 +1982,9 @@ A <xref:System.Collections.CollectionBase> instance is always modifiable. See <x
 ## Examples  
  The following code example implements the <xref:System.Collections.CollectionBase> class and uses that implementation to create a collection of <xref:System.Int16> objects.  
   
- [!code-cpp[System.Collections.CollectionBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp#1)]
- [!code-csharp[System.Collections.CollectionBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs#1)]
- [!code-vb[System.Collections.CollectionBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CPP/collectionbase.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CollectionBase/CS/collectionbase.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CollectionBase/VB/collectionbase.vb" id="Snippet1":::  
   
  ]]></format>
         </remarks>

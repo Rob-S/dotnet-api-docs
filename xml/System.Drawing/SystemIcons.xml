@@ -1,10 +1,10 @@
 <Type Name="SystemIcons" FullName="System.Drawing.SystemIcons">
-  <TypeSignature Language="C#" Value="public static class SystemIcons" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SystemIcons extends System.Object" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="C#" Value="public static class SystemIcons" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SystemIcons extends System.Object" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.SystemIcons" />
-  <TypeSignature Language="VB.NET" Value="Public Class SystemIcons" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SystemIcons abstract sealed" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="VB.NET" Value="Public Class SystemIcons" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="F#" Value="type SystemIcons = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SystemIcons abstract sealed" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;dotnet-plat-ext-3.1;dotnet-plat-ext-5.0;dotnet-plat-ext-6.0;net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="C#" Value="public sealed class SystemIcons" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemIcons extends System.Object" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SystemIcons" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -22,6 +22,7 @@
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -37,9 +38,9 @@
   
  This example is designed to be used with Windows Forms. Create a form that contains a button named Button2. Paste the code into the form and associate this method with the button's `Click` event.  
   
- [!code-cpp[System.Drawing.BitmapMembers#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CPP/form1.cpp#1)]
- [!code-csharp[System.Drawing.BitmapMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CS/form1.cs#1)]
- [!code-vb[System.Drawing.BitmapMembers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.BitmapMembers/VB/form1.vb#1)]  
+ :::code language="cpp" source="~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CPP/form1.cpp" id="Snippet1":::
+ :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CS/form1.cs" id="Snippet1":::
+ :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.BitmapMembers/VB/form1.vb" id="Snippet1":::  
   
  ]]></format>
     </remarks>
@@ -50,8 +51,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Application" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Application" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Application As Icon" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Application { System::Drawing::Icon ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Application : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Application { System::Drawing::Icon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -66,6 +67,7 @@
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Icon</ReturnType>
@@ -81,8 +83,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Asterisk" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Asterisk" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Asterisk As Icon" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Asterisk { System::Drawing::Icon ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Asterisk : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Asterisk" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Asterisk { System::Drawing::Icon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -97,6 +99,7 @@
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Icon</ReturnType>
@@ -112,8 +115,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Error" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Error" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Error As Icon" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Error { System::Drawing::Icon ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Error : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Error" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Error { System::Drawing::Icon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -128,6 +131,7 @@
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Icon</ReturnType>
@@ -143,8 +147,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Exclamation" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Exclamation" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Exclamation As Icon" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Exclamation { System::Drawing::Icon ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Exclamation : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Exclamation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Exclamation { System::Drawing::Icon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -159,6 +163,7 @@
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Icon</ReturnType>
@@ -174,8 +179,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Hand" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Hand" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Hand As Icon" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Hand { System::Drawing::Icon ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Hand : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Hand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Hand { System::Drawing::Icon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -190,6 +195,7 @@
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Icon</ReturnType>
@@ -205,8 +211,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Information" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Information" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Information As Icon" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Information { System::Drawing::Icon ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Information : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Information" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Information { System::Drawing::Icon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -221,6 +227,7 @@
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Icon</ReturnType>
@@ -236,8 +243,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Question" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Question" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Question As Icon" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Question { System::Drawing::Icon ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Question : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Question" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Question { System::Drawing::Icon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -252,6 +259,7 @@
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Icon</ReturnType>
@@ -267,8 +275,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Shield" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Shield" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Shield As Icon" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Shield { System::Drawing::Icon ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Shield : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Shield" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Shield { System::Drawing::Icon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -282,6 +290,7 @@
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Icon</ReturnType>
@@ -304,8 +313,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon Warning" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.Warning" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Warning As Icon" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Warning { System::Drawing::Icon ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Warning : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.Warning" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ Warning { System::Drawing::Icon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -320,6 +329,7 @@
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Icon</ReturnType>
@@ -335,8 +345,8 @@
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Icon WinLogo" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.SystemIcons.WinLogo" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WinLogo As Icon" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ WinLogo { System::Drawing::Icon ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.WinLogo : System.Drawing.Icon" Usage="System.Drawing.SystemIcons.WinLogo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Icon ^ WinLogo { System::Drawing::Icon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -351,6 +361,7 @@
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Icon</ReturnType>

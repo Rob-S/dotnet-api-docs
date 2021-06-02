@@ -3,11 +3,12 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TaskDialogProgressBarState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TaskDialogProgressBarState" />
   <TypeSignature Language="VB.NET" Value="Public Enum TaskDialogProgressBarState" />
-  <TypeSignature Language="C++ CLI" Value="public enum class TaskDialogProgressBarState" />
   <TypeSignature Language="F#" Value="type TaskDialogProgressBarState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TaskDialogProgressBarState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -22,12 +23,13 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TaskDialogProgressBarState Error = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TaskDialogProgressBarState.Error" />
       <MemberSignature Language="VB.NET" Value="Error" />
-      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberSignature Language="F#" Value="Error = 2" Usage="System.Windows.Forms.TaskDialogProgressBarState.Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TaskDialogProgressBarState</ReturnType>
@@ -42,12 +44,13 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TaskDialogProgressBarState Marquee = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TaskDialogProgressBarState.Marquee" />
       <MemberSignature Language="VB.NET" Value="Marquee" />
-      <MemberSignature Language="C++ CLI" Value="Marquee" />
       <MemberSignature Language="F#" Value="Marquee = 3" Usage="System.Windows.Forms.TaskDialogProgressBarState.Marquee" />
+      <MemberSignature Language="C++ CLI" Value="Marquee" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TaskDialogProgressBarState</ReturnType>
@@ -62,12 +65,13 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TaskDialogProgressBarState MarqueePaused = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TaskDialogProgressBarState.MarqueePaused" />
       <MemberSignature Language="VB.NET" Value="MarqueePaused" />
-      <MemberSignature Language="C++ CLI" Value="MarqueePaused" />
       <MemberSignature Language="F#" Value="MarqueePaused = 4" Usage="System.Windows.Forms.TaskDialogProgressBarState.MarqueePaused" />
+      <MemberSignature Language="C++ CLI" Value="MarqueePaused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TaskDialogProgressBarState</ReturnType>
@@ -85,12 +89,13 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TaskDialogProgressBarState None = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TaskDialogProgressBarState.None" />
       <MemberSignature Language="VB.NET" Value="None" />
-      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberSignature Language="F#" Value="None = 5" Usage="System.Windows.Forms.TaskDialogProgressBarState.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TaskDialogProgressBarState</ReturnType>
@@ -108,12 +113,13 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TaskDialogProgressBarState Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TaskDialogProgressBarState.Normal" />
       <MemberSignature Language="VB.NET" Value="Normal" />
-      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Forms.TaskDialogProgressBarState.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TaskDialogProgressBarState</ReturnType>
@@ -128,12 +134,13 @@
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TaskDialogProgressBarState Paused = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TaskDialogProgressBarState.Paused" />
       <MemberSignature Language="VB.NET" Value="Paused" />
-      <MemberSignature Language="C++ CLI" Value="Paused" />
       <MemberSignature Language="F#" Value="Paused = 1" Usage="System.Windows.Forms.TaskDialogProgressBarState.Paused" />
+      <MemberSignature Language="C++ CLI" Value="Paused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TaskDialogProgressBarState</ReturnType>

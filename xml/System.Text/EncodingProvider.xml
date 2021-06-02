@@ -3,8 +3,8 @@
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EncodingProvider extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Text.EncodingProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EncodingProvider" />
-  <TypeSignature Language="C++ CLI" Value="public ref class EncodingProvider abstract" />
   <TypeSignature Language="F#" Value="type EncodingProvider = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncodingProvider abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -25,11 +25,14 @@
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
     <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeForwardingChain>
-    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="net-5.0;net-6.0" />
     <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
     <TypeForwarding From="System.Text.Encoding" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
+    <TypeForwarding From="System.Text.Encoding" FromVersion="6.0.0.0" To="System.Runtime" ToVersion="6.0.0.0" FrameworkAlternate="net-6.0" />
     <TypeForwarding From="System.Text.Encoding" FromVersion="4.1.0.0" To="System.Runtime" ToVersion="4.2.0.0" FrameworkAlternate="netcore-2.0" />
     <TypeForwarding From="System.Text.Encoding" FromVersion="4.1.1.0" To="System.Runtime" ToVersion="4.2.1.0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
     <TypeForwarding From="System.Text.Encoding" FromVersion="4.1.2.0" To="System.Runtime" ToVersion="4.2.2.0" FrameworkAlternate="netcore-3.1" />
@@ -80,7 +83,7 @@
 
 4.  Call an <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> overload to retrieve the encoding. The <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> method will call the corresponding <xref:System.Text.EncodingProvider.GetEncoding%2A?displayProperty=nameWithType> to determine whether it can supply the requested encoding.
 
- The .NET Framework Class Library provides one static property, <xref:System.Text.CodePagesEncodingProvider.Instance%2A?displayProperty=nameWithType>, that returns an <xref:System.Text.EncodingProvider> object that makes the full set of encodings available on the desktop .NET Framework Class Library available to [!INCLUDE[net_core](~/includes/net-core-md.md)] applications. In addition, you can derive from the <xref:System.Text.EncodingProvider> class to make your own encodings available.
+ The .NET Framework Class Library provides one static property, <xref:System.Text.CodePagesEncodingProvider.Instance%2A?displayProperty=nameWithType>, that returns an <xref:System.Text.EncodingProvider> object that makes the full set of encodings available on the desktop .NET Framework Class Library available to .NET Core applications. In addition, you can derive from the <xref:System.Text.EncodingProvider> class to make your own encodings available.
 
  ]]></format>
     </remarks>
@@ -115,6 +118,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -136,9 +140,9 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Text.Encoding GetEncoding(int32 codepage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncodingProvider.GetEncoding(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEncoding (codepage As Integer) As Encoding" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Text::Encoding ^ GetEncoding(int codepage);" />
       <MemberSignature Language="F#" Value="abstract member GetEncoding : int -&gt; System.Text.Encoding" Usage="encodingProvider.GetEncoding codepage" />
-      <MemberSignature Language="C#" Value="public abstract System.Text.Encoding? GetEncoding (int codepage);" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Text::Encoding ^ GetEncoding(int codepage);" />
+      <MemberSignature Language="C#" Value="public abstract System.Text.Encoding? GetEncoding (int codepage);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -160,6 +164,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Encoding</ReturnType>
@@ -202,9 +207,9 @@ This method is called by the [Encoding.GetEncoding(Int32)](<xref:System.Text.Enc
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Text.Encoding GetEncoding(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncodingProvider.GetEncoding(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEncoding (name As String) As Encoding" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Text::Encoding ^ GetEncoding(System::String ^ name);" />
       <MemberSignature Language="F#" Value="abstract member GetEncoding : string -&gt; System.Text.Encoding" Usage="encodingProvider.GetEncoding name" />
-      <MemberSignature Language="C#" Value="public abstract System.Text.Encoding? GetEncoding (string name);" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Text::Encoding ^ GetEncoding(System::String ^ name);" />
+      <MemberSignature Language="C#" Value="public abstract System.Text.Encoding? GetEncoding (string name);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -226,6 +231,7 @@ This method is called by the [Encoding.GetEncoding(Int32)](<xref:System.Text.Enc
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Encoding</ReturnType>
@@ -263,9 +269,9 @@ This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.En
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Text.Encoding GetEncoding(int32 codepage, class System.Text.EncoderFallback encoderFallback, class System.Text.DecoderFallback decoderFallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncodingProvider.GetEncoding(System.Int32,System.Text.EncoderFallback,System.Text.DecoderFallback)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEncoding (codepage As Integer, encoderFallback As EncoderFallback, decoderFallback As DecoderFallback) As Encoding" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Text::Encoding ^ GetEncoding(int codepage, System::Text::EncoderFallback ^ encoderFallback, System::Text::DecoderFallback ^ decoderFallback);" />
       <MemberSignature Language="F#" Value="abstract member GetEncoding : int * System.Text.EncoderFallback * System.Text.DecoderFallback -&gt; System.Text.Encoding&#xA;override this.GetEncoding : int * System.Text.EncoderFallback * System.Text.DecoderFallback -&gt; System.Text.Encoding" Usage="encodingProvider.GetEncoding (codepage, encoderFallback, decoderFallback)" />
-      <MemberSignature Language="C#" Value="public virtual System.Text.Encoding? GetEncoding (int codepage, System.Text.EncoderFallback encoderFallback, System.Text.DecoderFallback decoderFallback);" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Text::Encoding ^ GetEncoding(int codepage, System::Text::EncoderFallback ^ encoderFallback, System::Text::DecoderFallback ^ decoderFallback);" />
+      <MemberSignature Language="C#" Value="public virtual System.Text.Encoding? GetEncoding (int codepage, System.Text.EncoderFallback encoderFallback, System.Text.DecoderFallback decoderFallback);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -287,6 +293,7 @@ This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.En
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Encoding</ReturnType>
@@ -330,9 +337,9 @@ This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.En
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Text.Encoding GetEncoding(string name, class System.Text.EncoderFallback encoderFallback, class System.Text.DecoderFallback decoderFallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncodingProvider.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEncoding (name As String, encoderFallback As EncoderFallback, decoderFallback As DecoderFallback) As Encoding" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Text::Encoding ^ GetEncoding(System::String ^ name, System::Text::EncoderFallback ^ encoderFallback, System::Text::DecoderFallback ^ decoderFallback);" />
       <MemberSignature Language="F#" Value="abstract member GetEncoding : string * System.Text.EncoderFallback * System.Text.DecoderFallback -&gt; System.Text.Encoding&#xA;override this.GetEncoding : string * System.Text.EncoderFallback * System.Text.DecoderFallback -&gt; System.Text.Encoding" Usage="encodingProvider.GetEncoding (name, encoderFallback, decoderFallback)" />
-      <MemberSignature Language="C#" Value="public virtual System.Text.Encoding? GetEncoding (string name, System.Text.EncoderFallback encoderFallback, System.Text.DecoderFallback decoderFallback);" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Text::Encoding ^ GetEncoding(System::String ^ name, System::Text::EncoderFallback ^ encoderFallback, System::Text::DecoderFallback ^ decoderFallback);" />
+      <MemberSignature Language="C#" Value="public virtual System.Text.Encoding? GetEncoding (string name, System.Text.EncoderFallback encoderFallback, System.Text.DecoderFallback decoderFallback);" FrameworkAlternate="net-5.0;net-6.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -354,6 +361,7 @@ This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.En
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.Encoding</ReturnType>
@@ -397,12 +405,13 @@ This method is called by the [Encoding.GetEncoding(String)](<xref:System.Text.En
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Text.EncodingInfo&gt; GetEncodings() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncodingProvider.GetEncodings" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEncodings () As IEnumerable(Of EncodingInfo)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Text::EncodingInfo ^&gt; ^ GetEncodings();" />
       <MemberSignature Language="F#" Value="abstract member GetEncodings : unit -&gt; seq&lt;System.Text.EncodingInfo&gt;&#xA;override this.GetEncodings : unit -&gt; seq&lt;System.Text.EncodingInfo&gt;" Usage="encodingProvider.GetEncodings " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Text::EncodingInfo ^&gt; ^ GetEncodings();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
